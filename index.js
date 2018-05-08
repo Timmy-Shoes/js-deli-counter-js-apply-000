@@ -1,6 +1,6 @@
 var katzDeli = ["Ada", "Grace", "Kent"];
 function takeANumber(katzDeliLine, name) {
-  return ("Welcome, " + name + ". You are number " + katzDeliLine.length + " in line.")
+  return ("Welcome, " + name + ". You are number " + katzDeliLine.push + " in line.")
 }
 function testTakeANumber() {
   katzDeli = ["Ada", "Grace", "Kent"]
