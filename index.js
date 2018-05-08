@@ -21,12 +21,6 @@ function testNowServingWithPeopleOnLine() {
   var expectedResponse = "Currently Serving Ada"
   return response === expectedResponse;
 }
-function testNowServingWithNoPeopleOnLine() {
-  katzDeli = [];
-  var response = nowServing(katzDeli);
-  var expectedResponse = "There is nobody waiting to be served!";
-  return response === expectedResponse;
-}
 function currentLine(katzDeliLine) {
   if (katzDeliLine.length === 0) {
     return "The line is currently empty.";
