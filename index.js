@@ -15,3 +15,15 @@ function nowServing(katzDeliLine) {
     return 'Currently serving ' + katzDeliLine.shift() + "."
   }
 }
+function testNowServingWithPeopleOnLine() {
+  katzDeli = ["Ada", "Grace", "Kent"];
+  var response = nowServing(katzDeli);
+  var expectedResponse = "Currently Serving Ada"
+  return response === expectedResponse;
+}
+function testNowServingWithNoPeopleOnLine() {
+  katzDeli = [];
+  var response = nowServing(katzDeli);
+  var expectedResponse = "There is nobody waiting to be served!";
+  return response === expectedResponse;
+}
