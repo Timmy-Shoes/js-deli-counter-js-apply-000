@@ -4,7 +4,6 @@ function takeANumber(katzDeliLine, name) {
 }
 function testTakeANumber() {
   katzDeli = ["Ada", "Grace", "Kent"]
-}
 var response = takeANumber(katzDeli, "Matz")
 var expectedResponse = "Welcome, Matz. You are number 3 in line."
 return expectedResponse === response && katzDeli.length === 3;
