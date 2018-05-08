@@ -27,3 +27,14 @@ function testNowServingWithNoPeopleOnLine() {
   var expectedResponse = "There is nobody waiting to be served!";
   return response === expectedResponse;
 }
+function currentLine(katzDeliLine) {
+  if (katzDeliLine.length === 0) {
+    return "The line is currently empty.";
+  } else {
+    var currentLineStrings = [];
+    for (var i = 0; i < katzDeliLine.length; i++) {
+      currentLineStrings.push(i + 1 + ". " + katzDeliLine[i]);
+    }
+    return "The line is currently: " + currentLineStrings.join(", ");
+  }
+}
